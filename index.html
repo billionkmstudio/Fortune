@@ -1,201 +1,90 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>免費紫微斗數命盤分析</title>
+  <meta name="description" content="免費紫微斗數命盤分析，僅供參考。" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang TC",
+        "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      background: #faf7fb;
+      color: #2d2d2d;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #7b4bb7, #b07adf);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1.5rem;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+    pre {
+      background: #f4f1f8;
+      padding: 1rem;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      background: #f0eaf5;
+    }
+    a {
+      color: #6b3fa0;
+      text-decoration: none;
+    }
   </style>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="zh-Hant"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;免費紫微斗數命盤分析&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="免費紫微斗數命盤分析，輸入出生年月日與時辰，了解命格特質與流年方向（僅供參考）。" /&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: -apple-system, BlinkMacSystemFont, "PingFang TC",</p>
-<p class="p1"><span class="Apple-converted-space">                   </span>"Noto Sans TC", "Microsoft JhengHei", sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #faf7fb;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #2d2d2d;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.7;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>a {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #6b3fa0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #7b4bb7, #b07adf);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 4rem 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header h1 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 2.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header p {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 600px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #6b3fa0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.75rem 1.6rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>section {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 800px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 3rem 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>section h2 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.6rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #5a2d8c;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>ul {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding-left: 1.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.box {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 8px 20px rgba(0,0,0,0.05);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>pre {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #f4f1f8;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 1.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>overflow-x: auto;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>white-space: pre-wrap;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.95rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #f0eaf5;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 2rem 1.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.85rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #555;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;免費紫微斗數命盤分析&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>輸入出生年月日與時辰，&lt;br /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>了解你的命格特質與今年流年方向</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;a href="#step1" class="btn"&gt;開始分析命盤&lt;/a&gt;</p>
-<p class="p1">&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section id="step1"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;第一步｜準備出生資料&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>請準備以下資訊，用來排出你的紫微斗數命盤：</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;出生年、月、日（西元）&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;出生時間（時辰或大約時間）&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;性別&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/ul&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&lt;strong&gt;前往紫微斗數排盤網站：&lt;/strong&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>你可以使用任何熟悉的紫微斗數排盤網站，</p>
-<p class="p1"><span class="Apple-converted-space">      </span>取得你的命盤資料（文字或星曜配置）。</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>👉 &lt;a href="https://www.google.com/search?q=紫微斗數+排盤" target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>點此搜尋紫微斗數排盤網站</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;第二步｜取得命盤資料&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>在排盤完成後，請複製以下其中一種資料：</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;命盤文字內容&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;十二宮星曜配置&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;命盤截圖（轉成文字亦可）&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/ul&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;第三步｜AI 紫微斗數分析&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>請複製下方指令，並將你的命盤資料貼入指定位置，</p>
-<p class="p1"><span class="Apple-converted-space">    </span>即可由 AI 產生完整的白話分析。</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;pre&gt;</p>
-<p class="p1">你是一位嚴謹但溫和的紫微斗數老師。</p>
-<p class="p1">請依傳統紫微斗數理論分析，不要迷信、不恐嚇，</p>
-<p class="p1">用理性、白話的方式說明。</p>
-<p class="p2"><br></p>
-<p class="p1">請分成以下五個部分：</p>
-<p class="p1">1. 命格總論</p>
-<p class="p1">2. 事業與學業發展</p>
-<p class="p1">3. 感情與人際關係</p>
-<p class="p1">4. 財運與物質觀</p>
-<p class="p1">5. 今年流年重點與建議</p>
-<p class="p2"><br></p>
-<p class="p1">以下是我的紫微斗數命盤資料：</p>
-<p class="p1">（請在此貼上命盤內容）</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/pre&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p style="margin-top:1.5rem;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>👉 &lt;a href="https://chat.openai.com/" target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>開啟 ChatGPT 進行分析</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;你會看到的分析內容&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;🌟 命宮性格與人生傾向&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;💼 事業／學業發展方向&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;❤️ 感情模式與人際互動&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;💰 財運特質與金錢觀&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;🗓️ 流年提醒（非預言）&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/ul&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>本網站內容僅供參考與自我理解之用，&lt;br /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>不構成任何命理保證、醫療、法律或投資建議。</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p style="margin-top:0.5rem;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>© 2026 紫微斗數命盤分析 · Free Personal Project</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</p>
-<p class="p1">&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<header>
+  <h1>免費紫微斗數命盤分析</h1>
+  <p>輸入出生資料，了解命格與流年方向</p>
+</header>
+
+<section>
+  <h2>使用方式</h2>
+  <ol>
+    <li>前往紫微斗數排盤網站取得命盤</li>
+    <li>複製命盤內容</li>
+    <li>貼到 ChatGPT 進行分析</li>
+  </ol>
+</section>
+
+<section>
+  <h2>AI 分析指令</h2>
+  <pre>
+你是一位嚴謹但溫和的紫微斗數老師，
+請用白話方式分析以下命盤，僅供參考。
+
+（請在此貼上命盤內容）
+  </pre>
+
+  <p>
+    👉 <a href="https://chat.openai.com/" target="_blank">開啟 ChatGPT</a>
+  </p>
+</section>
+
+<footer>
+  本網站內容僅供參考，不構成任何保證
+</footer>
+
 </body>
 </html>
